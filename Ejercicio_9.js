@@ -6,15 +6,15 @@ function adivina () {
         array[i]=Math.floor(Math.random() * 9); 
         
     }
-    console.log(array);
+    
     flag=true;
     while(flag){
     for (let i=0;i=20;i++){
         
-        if (array.includes(num)){
+        if (num==array[i]){
             
              alert('Has ganado');
-             break;
+             flag=false;
         }
         else {
             alert('perdiste');
